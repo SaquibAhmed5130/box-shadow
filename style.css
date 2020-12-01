@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: cursive;
+}
+body{
+    background: rgba(183,222,237,1)
+}
+.wrapper{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.components{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+h1{
+    padding:40px ;
+    margin-left: 30%;
+    font-size: 40px;
+    color: rgb(21, 135, 228);
+}
+h2{
+    margin-left: 31%;
+    font-size: 25px;
+}
+strong{
+    font-size: 25px;
+    color: rgba(235, 31, 31, 0.89);
+}
+.sliders{
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    padding: 10px 0px;
+}
+
+.setting{
+    padding: 20px 10px;
+    padding-top: 0px;
+}
+.text1{
+    width: 20px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    
+}
+.left .v-box{
+    height: 400px;
+    width: 400px;
+    margin: 100px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.left .v-box .text-box{
+    height: 180px;
+    width: 280px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.button{
+    padding: 10px 0px;
+}
+#toggle{
+    width: 50;
+}

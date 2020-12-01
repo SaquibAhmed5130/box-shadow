@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow-Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Wrappper">
+        <h1>Box Shadow Generator</h1>
+        <h2>The ultimate <strong>CSS tool</strong> for Web Designers</h2>
+        <div class="components">
+            <div class="right">
+                <div class="sliders">
+                    <div class="setting">
+                        <div class="button horizontal">
+                            <label for="horizontal-length">Horizontal-Length</label>
+                            <label class="align-right" for="Horizontal-Length">px</label>
+                        </div>
+                        <div class="text1">
+                            <input id="HLN" type="number" value="10">
+                        </div>
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="HL">
+                    </div>
+                    <div class="setting">
+                        <div class="button vertical">
+                            <label for="vertical-length">Vertical-Length</label>
+                            <label class="align-right" for="Horizontal-Length">px</label>
+                        </div>
+                        <div class="text2">
+                            <input id="VLN" type="number" value="10">
+                        </div>
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="VL">
+                    </div>
+                    <div class="setting">
+                        <div class="button blur">
+                            <label for="blur-radius">Blur-radius</label>
+                            <label class="align-right" for="Blur-radius">px</label>
+                        </div>
+                        <div class="text3">
+                            <input id="BRN" type="number" value="5">
+                        </div>
+                        <input type="range" min="1" max="100" value="5" class="slider" id="BR">
+                    </div>
+                    <div class="setting">
+                        <div class="button spread">
+                            <label for="spread-radius">Spread-Radius</label>
+                            <label class="align-right" for="spread-radius">px</label>
+                        </div>
+                        <div class="text4">
+                            <input id="SRN" type="number" value="0">
+                        </div>
+                        <input type="range" min="1" max="100" value="0" class="slider" id="SR">
+                    </div>
+                    <div class="setting">
+                        <div class="shadow">
+                            <label for="shadow-color">Shadow-Color</label>
+                            <input type="color"  class="color1" name="color1" value="#000000">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="background">
+                            <label for="background-color">Box-Color</label>
+                            <input type="color"  class="color2" name="color2" value="#008080">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="button opacity">
+                            <label for="opacity">Opacity</label>
+                            <label class="align-right" for="Opacity">px</label>
+                            <div class="text5" >
+                                <input id="OPN" type="number" step="0.05" value=".75">
+                            </div>
+                            <input type="range" min="0" max="1" step="0.05" value="0.75" class="slider" id="OP">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="toggle" >
+                            <span>Offset</span>
+                            <label class="switch">
+                                <input type="range" min="0" max="1" step="1" value="0" class="slider" id="toggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class= >Inset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="v-box">
+                    <div class="text-box">
+                        <p id="web">-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</p>
+                        <p id="moz">-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</p>
+                        <p id="def">box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script type="text/javascript" src="box.js"></script>
+</body>
+
+</html>
